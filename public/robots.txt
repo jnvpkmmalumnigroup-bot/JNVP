@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /events
+Allow: /announcements
+Allow: /privacy
+Disallow: /directory
+Disallow: /profile
+Disallow: /approvals
+Disallow: /admin
+Disallow: /onboarding
+Disallow: /pending

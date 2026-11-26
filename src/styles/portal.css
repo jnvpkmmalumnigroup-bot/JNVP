@@ -1,0 +1,313 @@
+/* Portal Pages — Built on the signature JNVP Royal Navy & Golden Yellow design system */
+
+.portal-page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2.25rem 1.5rem 4rem;
+}
+
+.portal-hero-banner {
+  background: linear-gradient(135deg, var(--jnv-navy-950) 0%, var(--jnv-navy-800) 100%);
+  color: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 2.25rem 2rem;
+  margin-bottom: 1.75rem;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.portal-hero-banner h1 {
+  font-size: clamp(1.65rem, 2.8vw, 2.25rem);
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.portal-hero-banner p {
+  color: #d6e2f7;
+  max-width: 680px;
+}
+
+.portal-card {
+  background: var(--jnv-bg-card);
+  border: 1px solid var(--jnv-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.portal-card-narrow {
+  max-width: 640px;
+  margin: 0 auto 1.5rem;
+}
+
+.portal-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.portal-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.portal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: var(--jnv-gold-soft);
+  color: var(--jnv-navy-900);
+  border: 1px solid rgba(245, 184, 46, 0.45);
+}
+
+.portal-badge-navy {
+  background: #e8eef9;
+  color: var(--jnv-navy-800);
+  border-color: var(--jnv-border);
+}
+
+.portal-badge-success {
+  background: #e7f8ef;
+  color: #0e6245;
+  border-color: #a9e4c5;
+}
+
+.portal-badge-danger {
+  background: #fdecec;
+  color: #9e1c1c;
+  border-color: #f6bcbc;
+}
+
+.portal-input,
+.portal-select,
+.portal-textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--jnv-border);
+  border-radius: var(--radius-sm);
+  background: #ffffff;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.portal-input:focus,
+.portal-select:focus,
+.portal-textarea:focus {
+  outline: 2px solid var(--jnv-gold-500);
+  border-color: var(--jnv-navy-700);
+}
+
+.portal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.portal-field label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.portal-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--jnv-border-light);
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.65rem;
+  background: #f9fbff;
+}
+
+.portal-alert {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.portal-alert-info {
+  background: #eef4ff;
+  border: 1px solid #c5d8ff;
+  color: var(--jnv-navy-900);
+}
+
+.portal-alert-success {
+  background: #e7f8ef;
+  border: 1px solid #a9e4c5;
+  color: #0e6245;
+}
+
+.portal-alert-error {
+  background: #fdecec;
+  border: 1px solid #f6bcbc;
+  color: #9e1c1c;
+}
+
+.btn-danger-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  border: 1.5px solid #c62828;
+  background: #ffffff;
+  color: #b71c1c;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-danger-outline:hover {
+  background: #fdecec;
+}
+
+.btn-google {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.85rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--jnv-border);
+  background: #ffffff;
+  color: var(--text-dark);
+  font-weight: 700;
+  font-size: 0.98rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(11, 37, 89, 0.08);
+}
+
+.btn-google:hover {
+  background: #f8fafd;
+  border-color: var(--jnv-navy-700);
+}
+
+.filter-toolbar {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .filter-toolbar {
+    grid-template-columns: 1fr;
+  }
+}
+
+.directory-card {
+  border: 1px solid var(--jnv-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.directory-card h3 {
+  font-size: 1.08rem;
+  color: var(--jnv-navy-900);
+}
+
+.members-menu-wrap {
+  position: relative;
+}
+
+.members-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  min-width: 210px;
+  background: #ffffff;
+  border: 1px solid var(--jnv-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card-hover);
+  padding: 0.45rem;
+  z-index: 120;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.members-dropdown a,
+.members-dropdown button {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: transparent;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.members-dropdown a:hover,
+.members-dropdown button:hover {
+  background: var(--jnv-bg);
+  color: var(--jnv-navy-800);
+}
+
+.stepper-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.stepper-pill {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: #eef2f8;
+  color: var(--text-muted);
+}
+
+.stepper-pill.active {
+  background: var(--jnv-navy-900);
+  color: var(--jnv-gold-400);
+}
+
+.stepper-pill.done {
+  background: #e7f8ef;
+  color: #0e6245;
+}
+
+.markdown-body h2,
+.markdown-body h3 {
+  color: var(--jnv-navy-900);
+  margin: 0.9rem 0 0.45rem;
+}
+
+.markdown-body p {
+  margin-bottom: 0.75rem;
+  color: var(--text-body);
+}
+
+.markdown-body ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.3rem;
+}
